@@ -77,6 +77,18 @@ In 2006, Intel release its VT-x and AMD presented AMD-V, both introducing the no
 
 Memory is also virtualized in order to accommodate guest systems. This is done by an extra level of indirection in memory management. The memory management unit must map guest physical memory to host machine physical memory.
 
+\subsection{Virtualization on ARM}
+\label{subsec:armvirt}
+
+ARM virtualization works similarly to Intel and AMD, in the sense that it also introduces a new privilege level, namely the \textbf{hyp} mode. In order to virtual memory usage while in this mode, an additional memory management unit was introduced. An additional extension, called Large Physical Address Extension, was also added, extending the addressable physical memory space to 40 bits.
+(cite http://genode.org/documentation/articles/arm_virtualization)
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=.5\linewidth]{img/arm.png}
+  \caption{ARM privilege levels}
+\end{figure}
+
 \subsection{Advantages of Virtualization for Embedded Systems}
 \label{subsec:advvirt}
 
