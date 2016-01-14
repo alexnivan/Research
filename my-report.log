@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.21)  14 JAN 2016 00:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.21)  15 JAN 2016 00:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -353,25 +353,58 @@ Package pdftex.def Info: img/bhyve.png used on input line 39.
 (pdftex.def)             Requested size: 273.14923pt x 249.12427pt.
  [5])
 (./src/setup.tex) (./src/results.tex) (./src/conclusion.tex) (./my-report.bbl
-[6 <./img/bhyve.png (PNG copy)>]) [7] (./my-report.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+[]\OT1/cmr/m/n/12 A Com-par-a-tive In-tro-duc-tion to FreeBSD for Linux Users.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+\OT1/cmr/m/n/12 https://www.digitalocean.com/community/tutorials/a-comparative-
+introduction-
+ []
+
+[6 <./img/bhyve.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+[]\OT1/cmr/m/n/12 An in-depth look into the ARM vir-tu-al-iza-tion ex-ten-sions
+.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--16
+[]\OT1/cmr/m/n/12 Explaining BSD.  https://www.freebsd.org/doc/en[]-US.ISO8859-
+
+ []
+
+
+Overfull \hbox (184.1066pt too wide) in paragraph at lines 22--26
+[]\OT1/cmr/m/n/12 T. Asada.  In-tro-duc-tion to bhyve.  https://docs.google.com
+/viewer?url=http%3A%2F%2Fbhyvecon.org%2Fintroduction[]-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--50
+[]\OT1/cmr/m/n/12 A. Singh.  An in-tro-duc-tion to vir-tu-al-iza-tion.
+ []
+
+) [7] (./my-report.aux) ) 
 Here is how much of TeX's memory you used:
- 3638 strings out of 495028
- 51242 string characters out of 6181496
- 121434 words of memory out of 5000000
- 6759 multiletter control sequences out of 15000+600000
- 8098 words of font info for 29 fonts, out of 8000000 for 9000
+ 3647 strings out of 495028
+ 51385 string characters out of 6181496
+ 121476 words of memory out of 5000000
+ 6768 multiletter control sequences out of 15000+600000
+ 7751 words of font info for 28 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,12n,24p,553b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on my-report.pdf (7 pages, 668503 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on my-report.pdf (7 pages, 665003 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream

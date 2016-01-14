@@ -1,11 +1,55 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{large-scale-p2p-sim}
-T.~T.~A. Dinh, G.~Theodoropoulos, and R.~Minson.
-\newblock {Evaluating Large Scale Distributed Simulation of P2P Networks}.
-\newblock In {\em DS-RT '08: Proceedings of the 2008 12th IEEE/ACM
-  International Symposium on Distributed Simulation and Real-Time
-  Applications}, pages 51--58, Washington, DC, USA, 2008. IEEE Computer
-  Society.
+\bibitem{comp-bsd-linux}
+{A Comparative Introduction to FreeBSD for Linux Users}.
+\newblock
+  {https://www.digitalocean.com/community/tutorials/a-comparative-introduction-to-freebsd-for-linux-users}.
+
+\bibitem{genode-arm}
+{An in-depth look into the ARM virtualization extensions}.
+\newblock {http://genode.org/documentation/articles/arm_virtualization}.
+
+\bibitem{bsd}
+{Explaining BSD}.
+\newblock
+  {https://www.freebsd.org/doc/en\_US.ISO8859-1/articles/explaining-bsd/index.html}.
+
+\bibitem{vmware-paravirtualization}
+{Understanding Full Virtualization, Paravirtualization, and Hardware Assist},
+  2007.
+
+\bibitem{intr-bhyve}
+T.~Asada.
+\newblock {Introduction to bhyve}.
+\newblock
+  {https://docs.google.com/viewer?url=http\%3A\%2F\%2Fbhyvecon.org\%2Fintroduction\_to\_bhyve.pdf}.
+
+\bibitem{extending-bhyve}
+P.~Grehan.
+\newblock {Extending bhyve beyond FreeBD guests}.
+\newblock
+  {http://people.freebsd.org/~grehan/talks/eurobsdcon\_2013\_bhyve.pdf}.
+
+\bibitem{virt-embedded}
+G.~Heiser.
+\newblock Virtualization for embedded systems, 2007.
+
+\bibitem{virtualization-embedded}
+M.~T. Jones.
+\newblock {Virtualization for embedded systems}, 2011.
+
+\bibitem{formal-virt}
+G.~J. Popek and R.~P. Goldberg.
+\newblock {Formal requirements for virtualizable third generation
+  architectures}, 1974.
+
+\bibitem{intr-virtualization}
+A.~Singh.
+\newblock {An introduction to virtualization}.
+\newblock {http://www.kernelthread.com/publications/virtualization/}, 2004.
+
+\bibitem{hw-support-arm}
+P.~Varanasi and G.~Heiser.
+\newblock {Hardware-Supported Virtualization on ARM}.
 
 \end{thebibliography}
