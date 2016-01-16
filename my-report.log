@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.21)  15 JAN 2016 00:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.21)  16 JAN 2016 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -151,14 +151,31 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen127
-\WF@size=\dimen128
-\c@WF@wrappedlines=\count101
-\WF@box=\box28
-\WF@everypar=\toks25
-Package: wrapfig 2003/01/31  v 3.6
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count101
+\lst@gtempboxa=\box28
+\lst@token=\toks25
+\lst@length=\count102
+\lst@currlwidth=\dimen127
+\lst@column=\count103
+\lst@pos=\count104
+\lst@lostspace=\dimen128
+\lst@width=\dimen129
+\lst@newlines=\count105
+\lst@lineno=\count106
+\lst@maxwidth=\dimen130
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count107
+\lst@skipnumbers=\count108
+\lst@framebox=\box29
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -182,10 +199,10 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count102
+\Gread@gobject=\count109
 ))
-\Gin@req@height=\dimen129
-\Gin@req@width=\dimen130
+\Gin@req@height=\dimen131
+\Gin@req@width=\dimen132
 )
 (./my-report.aux)
 \openout1 = `my-report.aux'.
@@ -240,18 +257,20 @@ LaTeX Font Info:    ... okay on input line 32.
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
+\c@lstlisting=\count110
+
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
-\scratchdimen=\dimen131
-\scratchbox=\box29
-\nofMPsegments=\count104
-\nofMParguments=\count105
+\scratchcounter=\count111
+\scratchdimen=\dimen133
+\scratchbox=\box30
+\nofMPsegments=\count112
+\nofMParguments=\count113
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count106
-\MPscratchDim=\dimen132
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen134
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -305,54 +324,54 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: uni-2.def 2013/05/13 UCS: Unicode data U+0200..U+02FF
 )
 (./src/abstract.tex) (./src/introduction.tex) (./src/virtualization.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 <img/fullvirt.png, id=14, 639.38875pt x 477.785pt>
 File: img/fullvirt.png Graphic file (type png)
  <use img/fullvirt.png>
-Package pdftex.def Info: img/fullvirt.png used on input line 55.
+Package pdftex.def Info: img/fullvirt.png used on input line 51.
 (pdftex.def)             Requested size: 159.33821pt x 119.06685pt.
 
-[2 <./img/fullvirt.png>] <img/paravirt.png, id=18, 711.65875pt x 540.0175pt>
+<img/paravirt.png, id=15, 711.65875pt x 540.0175pt>
 File: img/paravirt.png Graphic file (type png)
-
-<use img/paravirt.png>
-Package pdftex.def Info: img/paravirt.png used on input line 69.
+ <use img/paravirt.png>
+Package pdftex.def Info: img/paravirt.png used on input line 65.
 (pdftex.def)             Requested size: 182.09486pt x 138.17644pt.
- <img/arm.png, id=19, 530.98375pt x 421.575pt>
+
+[2 <./img/fullvirt.png>] <img/arm.png, id=19, 530.98375pt x 421.575pt>
 File: img/arm.png Graphic file (type png)
 
 <use img/arm.png>
-Package pdftex.def Info: img/arm.png used on input line 88.
+Package pdftex.def Info: img/arm.png used on input line 85.
 (pdftex.def)             Requested size: 227.62206pt x 180.72049pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./img/paravirt.png>]) (./src/bhyve.tex
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
-File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [4 <./img/arm.png>]
-Overfull \hbox (21.47455pt too wide) in paragraph at lines 13--15
-\OT1/cmr/m/n/12 (https://www.digitalocean.com/community/tutorials/a-comparative
--introduction-to-freebsd-
- []
-
-<img/bhyve.png, id=26, 559.08875pt x 509.905pt>
+[3 <./img/paravirt.png>]) (./src/bhyve.tex [4 <./img/arm.png>]
+<img/bhyve.png, id=27, 559.08875pt x 509.905pt>
 File: img/bhyve.png Graphic file (type png)
  <use img/bhyve.png>
-Package pdftex.def Info: img/bhyve.png used on input line 39.
+Package pdftex.def Info: img/bhyve.png used on input line 38.
 (pdftex.def)             Requested size: 273.14923pt x 249.12427pt.
- [5])
-(./src/setup.tex) (./src/results.tex) (./src/conclusion.tex) (./my-report.bbl
+) [5]
+(./src/setup.tex [6 <./img/bhyve.png (PNG copy)>]) (./src/conclusion.tex)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 65.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 65.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 65.
+
+(./my-report.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 []\OT1/cmr/m/n/12 A Com-par-a-tive In-tro-duc-tion to FreeBSD for Linux Users.
  []
@@ -363,7 +382,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
 introduction-
  []
 
-[6 <./img/bhyve.png (PNG copy)>]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 9--11
 []\OT1/cmr/m/n/12 An in-depth look into the ARM vir-tu-al-iza-tion ex-ten-sions
 .
@@ -376,38 +395,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--16
  []
 
 
-Overfull \hbox (184.1066pt too wide) in paragraph at lines 22--26
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
+[]\OT1/cmr/m/n/12 KVM vir-tu-al-iza-tion on Arn-dale de-vel-op-ment board.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
+\OT1/cmr/m/n/12 http://www.virtualopensystems.com/en/solutions/guides/kvm-virtu
+alization-
+ []
+
+
+Overfull \hbox (184.1066pt too wide) in paragraph at lines 39--43
 []\OT1/cmr/m/n/12 T. Asada.  In-tro-duc-tion to bhyve.  https://docs.google.com
 /viewer?url=http%3A%2F%2Fbhyvecon.org%2Fintroduction[]-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--50
+Underfull \hbox (badness 10000) in paragraph at lines 64--67
 []\OT1/cmr/m/n/12 A. Singh.  An in-tro-duc-tion to vir-tu-al-iza-tion.
  []
 
-) [7] (./my-report.aux) ) 
+) [8] (./my-report.aux) ) 
 Here is how much of TeX's memory you used:
- 3647 strings out of 495028
- 51385 string characters out of 6181496
- 121476 words of memory out of 5000000
- 6768 multiletter control sequences out of 15000+600000
- 7751 words of font info for 28 fonts, out of 8000000 for 9000
+ 4942 strings out of 495028
+ 68725 string characters out of 6181496
+ 142206 words of memory out of 5000000
+ 8054 multiletter control sequences out of 15000+600000
+ 10100 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,12n,24p,553b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,32p,591b,1041s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on my-report.pdf (7 pages, 665003 bytes).
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmtt12.pfb>
+Output written on my-report.pdf (8 pages, 690826 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 79 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

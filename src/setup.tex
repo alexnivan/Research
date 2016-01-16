@@ -1,3 +1,52 @@
 % vim: set tw=78 sts=2 sw=2 ts=8 aw et ai:
 
-In order to define recursion, one must first define recursion.
+Before actually beginning to work on porting bhyve to ARMv8 a working baseline to compare future results to was needed. To this end, an Arndale Board was used. The board is based on a Samsung Exynos5250 processor, which is part of the ARMv7 family.
+The two steps performed were:
+\begin{itemize}
+\item
+Run FreeBSD on the Arndale board
+\item
+Run a KVM guest on a Linux host running on the Arndale board
+\end{itemize}
+
+\subsection{FreeBSD on Arndale}
+\label{subsec:bsd-arndale}
+
+This step was done in order to better understand the process of running FreeBSD on an ARM device. It was done by following the documentation from the FreeBSD wiki\cite{arndale}.
+The setup has two important components to build: the FreeBSD system and the bootloader.
+
+Building FreeBSD is a straightforward process. After obtaining the FreeBSD sources, one must simply build the kernel toolchain, provide the proper configuration, after which the kernel and the system can be built.
+
+\begin{lstlisting}[frame=bottom, basicstyle=\footnotesize\ttfamily]
+# make TARGET_ARCH=armv6 kernel-toolchain
+# make TARGET_ARCH=armv6 KERNCONF=ARNDALE buildkernel
+# make TARGET_ARCH=armv6 buildworld
+# make TARGET_ARCH=armv6 DESTDIR=/mnt installworld distribution
+\end{lstlisting}
+
+The last command installs the filesystem in the /mnt directory.
+
+Building the bootloader is also a simple process that consists of obtaining the source code, configuring and building the software.
+The interesting part is preparing writing the bootloader to an SD card from which the board will boot. Three components are required:
+\begin{itemize}
+\item
+\textbf{The stage one binary} - also called BL1, which is proprietary and does the first steps of the booting process
+\item
+\textbf{The secondary program loader} - or SPL, which is also board specific, although built by the bootloader; this component has the role of loading the actual bootloader
+\item
+\textbf{The u-boot binary} - this is the actual bootloader; it provides the needed functionality to load the kernel
+\end{itemize}
+
+With some minor issues, this step was performed successfully.
+
+\subsection{KVM virtualization on Arndale}
+\label{subsec:kvm-arndale}
+
+The goal of this step was to establish a working baseline.
+The approach used is described in the following guide\cite{kvm}.
+
+There are many similarities to running FreeBSD on the Arndale board. Once more, the u-boot bootloader is used in order to load the kernel. However, in this case the kernel is a modified version of the 3.8 Linux kernel, with a patch set applied that enables KVM on ARM architecture. The filesystem for the host is built separately.
+
+After booting the Linux host on the board, preparations for the running the guest systems must be made. The first part is to build \texttt{qemu}, which emulates devices and exposes KVM to userspace. Although a separate kernel has to be built for the guest system, the filesystem created for the host can be reused. Finally, the proper network configuration must be made in order to bridge the guest system network to the physical network.
+
+This step proved to be more problematic than the previous. The main cause were modifications made in the repository for \texttt{qemu}, which resulted in attempting to compile multiple branches in order to obtain the proper binary. After several attempts, a decision was made to use the precompiled binary provided by the guide in order to save time. In the end, the process was successful.

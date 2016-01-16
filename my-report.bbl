@@ -14,7 +14,24 @@
 \newblock
   {https://www.freebsd.org/doc/en\_US.ISO8859-1/articles/explaining-bsd/index.html}.
 
-\bibitem{vmware-paravirtualization}
+\bibitem{arndale}
+{FreeBSD on Arndale Board}.
+\newblock {https://wiki.freebsd.org/FreeBSD/arm/ArndaleBoard}.
+
+\bibitem{gnu}
+{GNU GENERAL PUBLIC LICENSE}.
+\newblock {http://www.gnu.org/licenses/gpl-3.0.en.html}.
+
+\bibitem{kvm}
+{KVM virtualization on Arndale development board}.
+\newblock
+  {http://www.virtualopensystems.com/en/solutions/guides/kvm-virtualization-on-arndale/}.
+
+\bibitem{bsd-license}
+{The BSD 2-Clause License}.
+\newblock {http://opensource.org/licenses/bsd-license.php}.
+
+\bibitem{vmware}
 {Understanding Full Virtualization, Paravirtualization, and Hardware Assist},
   2007.
 

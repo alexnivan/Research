@@ -3,49 +3,53 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: my-report.aux
 The style file: abbrv.bst
 Database file #1: my-report.bib
+Warning--to sort, need author or key in vmware
 Warning--to sort, need author or key in genode-arm
-Warning--to sort, need author or key in vmware-paravirtualization
-Warning--to sort, need author or key in comp-bsd-linux
 Warning--to sort, need author or key in bsd
-You've used 11 entries,
+Warning--to sort, need author or key in gnu
+Warning--to sort, need author or key in bsd-license
+Warning--to sort, need author or key in comp-bsd-linux
+Warning--to sort, need author or key in arndale
+Warning--to sort, need author or key in kvm
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            539 strings with 5071 characters,
-and the built_in function-call counts, 2123 in all, are:
-= -- 189
-> -- 65
+            551 strings with 5435 characters,
+and the built_in function-call counts, 2759 in all, are:
+= -- 249
+> -- 69
 < -- 0
-+ -- 29
++ -- 33
 - -- 18
-* -- 70
-:= -- 319
-add.period$ -- 24
-call.type$ -- 11
-change.case$ -- 42
+* -- 90
+:= -- 387
+add.period$ -- 32
+call.type$ -- 15
+change.case$ -- 54
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 77
-empty$ -- 247
+cite$ -- 23
+duplicate$ -- 105
+empty$ -- 339
 format.name$ -- 18
-if$ -- 480
+if$ -- 640
 int.to.chr$ -- 0
-int.to.str$ -- 11
+int.to.str$ -- 15
 missing$ -- 0
-newline$ -- 49
+newline$ -- 65
 num.names$ -- 14
-pop$ -- 94
+pop$ -- 126
 preamble$ -- 1
-purify$ -- 31
+purify$ -- 39
 quote$ -- 0
-skip$ -- 90
+skip$ -- 122
 stack$ -- 0
-substring$ -- 55
-swap$ -- 11
+substring$ -- 75
+swap$ -- 15
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 44
-warning$ -- 4
+type$ -- 60
+warning$ -- 8
 while$ -- 14
-width$ -- 13
-write$ -- 88
-(There were 4 warnings)
+width$ -- 17
+write$ -- 116
+(There were 8 warnings)

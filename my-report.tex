@@ -13,13 +13,13 @@
 \usepackage{float}
 \usepackage{booktabs}     % professional tables
 \usepackage{parskip}
-\usepackage{wrapfig}
+\usepackage{listings}
 
 % Support for including graphics
 \usepackage{graphicx}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
-\title{Grand Report Title}
+\title{bhyve for ARMv8}
 
 \author{Nicolae-Alexandru Ivan\\
 Faculty of Automatic Control and Computers\\
@@ -49,13 +49,11 @@ Splaiul Independenței 313, Bucharest, Romania, 060042 \\
 \label{sec:bhyve}
 \input{src/bhyve}
 
-\section{Experimental Setup}
+\newpage
+
+\section{Experimental Setup and Results}
 \label{sec:setup}
 \input{src/setup}
-
-\section{Scenarios and Results}
-\label{sec:results}
-\input{src/results}
 
 \section{Conclusion and Further Work}
 \label{sec:conclusion}
@@ -64,7 +62,7 @@ Splaiul Independenței 313, Bucharest, Romania, 060042 \\
 \section*{Acknowledgment}
 \label{sec:acknowledgment}
 
-The authors would like to thank XYZ for their support and dedication.
+The authors would like to thank Mihai Carabaș for his support and dedication.
 
 \nocite{*}
 
