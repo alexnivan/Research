@@ -1,6 +1,6 @@
 % vim: set tw=78 sts=2 sw=2 ts=8 aw et ai:
 
-"Virtualization is a framework or methodology of dividing the resources of a computer into multiple execution environments, by applying one or more concepts or technologies such as hardware and software partitioning, time-sharing, partial or complete machine simulation, emulation, quality of service, and many others."\cite{intr-virtualization}
+Virtualization is a concept in which one or more execution environments are simulated through various techniques. These may include hardware and software partitioning, time-sharing, machine emulation and others.\cite{intr-virtualization}
 
 It implies having a machine on which the virtualization takes place, called a \textbf{host machine}, and a firmware or software, called a \textbf{hypervisor} or virtual machine manager, that creates the virtualized or \textbf{guest machine}.
 
@@ -48,10 +48,9 @@ In this case, the guest OS does not know it is being virtualized. Thus, no modif
 
 \begin{figure}[h]
 \centering
-  \includegraphics[width=.35\linewidth]{img/fullvirt.png}
-  \caption{Full Virtualization\cite{vmware}}
+  \includegraphics[width=.65\linewidth]{img/fullvirt.pdf}
+  \caption{Full Virtualization}
 \end{figure}
-
 
 \subsubsection{Paravirtulization}
 \label{subsubsec:paravirt}
@@ -62,8 +61,8 @@ This approach incurs less performance penalty, but it requires modifications to 
 
 \begin{figure}[h]
 \centering
-  \includegraphics[width=.4\linewidth]{img/paravirt.png}
-  \caption{Paravirtualization\cite{vmware}}
+  \includegraphics[width=.65\linewidth]{img/paravirt.pdf}
+  \caption{Paravirtualization}
 \end{figure}
 
 \subsection{Hardware Assisted Virtualization}
@@ -76,14 +75,14 @@ Memory is also virtualized in order to accommodate guest systems. This is done b
 \subsection{Virtualization on ARM}
 \label{subsec:armvirt}
 
-ARM is a 32-bit RISC architecture. It features one user mode and 6 kernel modes. A secure mode exists, which can be used to protect access to hardware resources and a monitor mode, which is responsible for switching between the secure and normal modes\cite{hw-support-arm}.
+ARM is a 32-bit RISC architecture. It features one user mode and 6 kernel modes. A secure mode is present, which can be used to protect access to hardware resources and a monitor mode also exists and is responsible for switching between the secure and normal modes\cite{hw-support-arm}.
 
 ARM virtualization works similarly to Intel and AMD, in the sense that it also introduces a new privilege level, namely the \textbf{hyp} mode. In order to virtual memory usage while in this mode, an additional memory management unit was introduced. An additional extension, called Large Physical Address Extension, was also added, extending the addressable physical memory space to 40 bits\cite{genode-arm}.
 
 \begin{figure}[h]
 \centering
-  \includegraphics[width=.5\linewidth]{img/arm.png}
-  \caption{ARM privilege levels\cite{genode-arm}}
+  \includegraphics[width=.75\linewidth]{img/arm.pdf}
+  \caption{ARM privilege levels}
 \end{figure}
 
 Additionally, ARM introduced a component called \textbf{virtual CPU} which allows virtual interrupts. Such interrupts can either be handled by the hypervisor, or linked directly to the physical interrupt\cite{hw-support-arm}.
