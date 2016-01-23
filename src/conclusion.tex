@@ -1,3 +1,13 @@
 % vim: set tw=78 sts=2 sw=2 ts=8 aw et ai:
 
-And that was it.
+Virtualiation, a subject that began its development in the 1960s, is still being actively researched. The process of extending to embedded devices was a normal response to their rapid advance in performance.
+
+Although initial virtualization techniques relied heavily on software implementations and modifications to the virtualized systems, it was the introduction of hardware assisted virtualization that made high performance virtualization on a multitude of platforms.
+
+\texttt{bhyve} is the FreeBSD hypervisor. It shares some characteristics with Linux KVM, although it does not have support for as many guest systems. It relies on hardware assisted virtualization more that software techniques.
+
+The experiments described in Section \ref{sec:setup} have helped determine that the chosen environment is suitable for further research. It has been established that FreeBSD can be run on the chosen embedded platform, and, in addition to this, that the hardware provided virtualization extensions are functional.
+
+The major goal of the research project is to successfully run the \texttt{bhyve} hypervisor on a ARMv7 processor. To this extent, various steps will be required. These may vary between emulating the embedded system to debugging problematic behaviour and providing fixes to the bhyve codebase.
+
+ 

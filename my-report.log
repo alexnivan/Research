@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.21)  17 JAN 2016 22:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.21)  21 JAN 2016 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -324,6 +324,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: uni-2.def 2013/05/13 UCS: Unicode data U+0200..U+02FF
 )
 (./src/abstract.tex) (./src/introduction.tex) (./src/virtualization.tex
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -331,42 +334,43 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<img/fullvirt.pdf, id=14, 722.7pt x 542.025pt>
+ [2]
+<img/fullvirt.pdf, id=17, 722.7pt x 542.025pt>
 File: img/fullvirt.pdf Graphic file (type pdf)
  <use img/fullvirt.pdf>
 Package pdftex.def Info: img/fullvirt.pdf used on input line 51.
-(pdftex.def)             Requested size: 295.90588pt x 221.92567pt.
- [2 <./img/fullvirt.pdf>] <img/paravirt.pdf, id=29, 722.7pt x 542.025pt>
-File: img/paravirt.pdf Graphic file (type pdf)
+(pdftex.def)             Requested size: 250.38564pt x 187.78453pt.
 
-<use img/paravirt.pdf>
+<img/paravirt.pdf, id=18, 722.7pt x 542.025pt>
+File: img/paravirt.pdf Graphic file (type pdf)
+ <use img/paravirt.pdf>
 Package pdftex.def Info: img/paravirt.pdf used on input line 64.
-(pdftex.def)             Requested size: 295.90588pt x 221.92567pt.
- [3 <./img/paravirt.pdf>]
-<img/arm.pdf, id=44, 721.69624pt x 487.8225pt>
+(pdftex.def)             Requested size: 250.38564pt x 187.78453pt.
+ [3 <./img/fullvirt.pdf> <./img/paravirt.pdf
+
+pdfTeX warning: pdflatex (file ./img/paravirt.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+>] <img/arm.pdf, id=43, 721.69624pt x 487.8225pt>
 File: img/arm.pdf Graphic file (type pdf)
  <use img/arm.pdf>
 Package pdftex.def Info: img/arm.pdf used on input line 84.
-(pdftex.def)             Requested size: 341.43307pt x 230.78764pt.
- [4 <./img/arm.pdf>]) (./src/bhyve.tex [5] <img/bhyve.pdf, id=63, 722.7pt x 451
+(pdftex.def)             Requested size: 318.66948pt x 215.4018pt.
+ [4 <./img/arm.pdf>]) (./src/bhyve.tex [5] <img/bhyve.pdf, id=62, 722.7pt x 451
 .6875pt>
 File: img/bhyve.pdf Graphic file (type pdf)
 
 <use img/bhyve.pdf>
 Package pdftex.def Info: img/bhyve.pdf used on input line 38.
 (pdftex.def)             Requested size: 341.43307pt x 213.39589pt.
-) (./src/setup.tex [6 <./img/bhyve.pdf>])
-(./src/conclusion.tex) [7]
+) (./src/setup.tex [6 <./img/bhyve.pdf>] [7])
+(./src/conclusion.tex)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 63.
- (./my-report.bbl
+ [8] (./my-report.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 []\OT1/cmr/m/n/12 A Com-par-a-tive In-tro-duc-tion to FreeBSD for Linux Users.
  []
@@ -407,19 +411,19 @@ Overfull \hbox (184.1066pt too wide) in paragraph at lines 39--43
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--67
+Underfull \hbox (badness 10000) in paragraph at lines 68--71
 []\OT1/cmr/m/n/12 A. Singh.  An in-tro-duc-tion to vir-tu-al-iza-tion.
  []
 
-) [8] (./my-report.aux) ) 
+) [9] (./my-report.aux) ) 
 Here is how much of TeX's memory you used:
- 4941 strings out of 495028
- 68721 string characters out of 6181496
- 143206 words of memory out of 5000000
- 8054 multiletter control sequences out of 15000+600000
+ 4942 strings out of 495028
+ 68726 string characters out of 6181496
+ 143254 words of memory out of 5000000
+ 8055 multiletter control sequences out of 15000+600000
  10100 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,12n,32p,525b,1041s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,32p,617b,1041s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
@@ -431,10 +435,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmtt12.pfb>
-Output written on my-report.pdf (8 pages, 226076 bytes).
+Output written on my-report.pdf (9 pages, 237101 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

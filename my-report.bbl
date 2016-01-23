@@ -55,6 +55,10 @@ G.~Heiser.
 M.~T. Jones.
 \newblock {Virtualization for embedded systems}, 2011.
 
+\bibitem{IBM}
+S.~Meier.
+\newblock {IBM Systems Virtualization: Servers, Storage, and Software}, 2008.
+
 \bibitem{formal-virt}
 G.~J. Popek and R.~P. Goldberg.
 \newblock {Formal requirements for virtualizable third generation

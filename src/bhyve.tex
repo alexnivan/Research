@@ -1,7 +1,7 @@
 % vim: set tw=78 sts=2 sw=2 ts=8 aw et ai:
 
 \texttt{BSD} stands for "Berkeley Software Distribution". It is derived from AT\&T's Research UNIX operating system. In 1990, the BSD code was released without the proprietary AT\&T code.
-Since the proprietary code contained a good portion of the kernel, it was not until 1992 that a complete operating system based on the BSD code was released - 386BSD. In 1993, the FreeBSD operating system split from the project\cite{bsd}. 
+Since the proprietary code contained a good portion of the kernel, it was not until 1992 that a complete operating system based on the BSD code was released - 386BSD. In 1993, the FreeBSD operating system split from the 386BSD project\cite{bsd}. 
 
 \subsection{FreeBSD vs Linux}
 \label{subsec:bsdlinux}
@@ -22,7 +22,7 @@ Being a legacy-free hypervisor, it is reliant on the virtualization features of 
 bhyve has several components\cite{intr-bhyve}\cite{extending-bhyve}:
 \begin{itemize}
 \item
-\textbf{vmm.ko} - kernel module, manages VT-x stare, context switching, guest physical memory and other aspects
+\textbf{vmm.ko} - kernel module, manages VT-x state, context switching, guest physical memory and other aspects
 \item
 \textbf{libvmmapi} - userland API
 \item

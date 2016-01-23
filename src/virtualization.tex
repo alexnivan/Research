@@ -46,9 +46,9 @@ As seen in Figure 1, user code is executed directly, while guest OS requests are
 
 In this case, the guest OS does not know it is being virtualized. Thus, no modifications to the operating system are necessary. The hypervisor may cache the translated instructions for future use.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
-  \includegraphics[width=.65\linewidth]{img/fullvirt.pdf}
+  \includegraphics[width=.55\linewidth]{img/fullvirt.pdf}
   \caption{Full Virtualization}
 \end{figure}
 
@@ -57,11 +57,11 @@ In this case, the guest OS does not know it is being virtualized. Thus, no modif
 
 Paravirtualization means the hypervisor provides interfaces for operations that are not virtualizable. Because of this, guest OS instructions are now replaced by hypercalls which interact with the virtualization layer.
 
-This approach incurs less performance penalty, but it requires modifications to the operating system which is to be virtualized. However, this also brings the advantage of being able to replace multiple consecutive sensitive instructions with a single hypercall, reducing the penalty induced by exceptions\cite{virt-embedded}.
+This approach incurs less performance penalty, but it requires modifications to the operating system which is to be virtualized. In addition, it brings the advantage of being able to replace multiple consecutive sensitive instructions with a single hypercall, reducing the penalty induced by exceptions\cite{virt-embedded}.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
-  \includegraphics[width=.65\linewidth]{img/paravirt.pdf}
+  \includegraphics[width=.55\linewidth]{img/paravirt.pdf}
   \caption{Paravirtualization}
 \end{figure}
 
@@ -77,15 +77,15 @@ Memory is also virtualized in order to accommodate guest systems. This is done b
 
 ARM is a 32-bit RISC architecture. It features one user mode and 6 kernel modes. A secure mode is present, which can be used to protect access to hardware resources and a monitor mode also exists and is responsible for switching between the secure and normal modes\cite{hw-support-arm}.
 
-ARM virtualization works similarly to Intel and AMD, in the sense that it also introduces a new privilege level, namely the \textbf{hyp} mode. In order to virtual memory usage while in this mode, an additional memory management unit was introduced. An additional extension, called Large Physical Address Extension, was also added, extending the addressable physical memory space to 40 bits\cite{genode-arm}.
+ARM virtualization works similarly to Intel and AMD, in the sense that it also introduces a new privilege level, namely the \textbf{hyp} mode. In order to handle virtual memory usage while in this mode, an additional memory management unit was introduced. An additional extension, called Large Physical Address Extension, was also added, extending the addressable physical memory space to 40 bits\cite{genode-arm}.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
-  \includegraphics[width=.75\linewidth]{img/arm.pdf}
+  \includegraphics[width=.7\linewidth]{img/arm.pdf}
   \caption{ARM privilege levels}
 \end{figure}
 
-Additionally, ARM introduced a component called \textbf{virtual CPU} which allows virtual interrupts. Such interrupts can either be handled by the hypervisor, or linked directly to the physical interrupt\cite{hw-support-arm}.
+Another component introduced by ARM is called \textbf{virtual CPU} which allows virtual interrupts. Such interrupts can either be handled by the hypervisor, or linked directly to the physical interrupt\cite{hw-support-arm}.
 
 \subsection{Advantages of Virtualization for Embedded Systems}
 \label{subsec:advvirt}
@@ -99,8 +99,8 @@ The above mentioned isolation also results in the possibility of using software 
 \subsection{Limitations of Virtualization for Embedded Systems}
 \label{subsec:limitvirt}
 
-While performance of embedded systems has increased considerably, complexity of software systems has increased as well. The fact that each guest runs a separate operating system renders the virtual machines quite expensive from a resource point of view.
+While performance of embedded systems has increased considerably, complexity of software systems has increased as well. The fact that each guest runs a separate operating system renders the virtual machines quite expensive from a resource perspective.
 
-Another issue with performance is brought on by the scheduling mechanism. Due to the encapsulation of virtualized systems, the hypervisor can only associate a priority for each guest system. The result is that a low priority task running inside a high priority machine will be scheduled before a high priority task inside a lower priority guest\cite{virt-embedded}.
+Another issue with performance is brought on by the scheduling mechanism. Due to the encapsulation of virtualized systems, the hypervisor can only associate a priority for each guest system. The result is that a higher priority machine will be preferred while scheduling, regardless of the priority of the task running inside the guest\cite{virt-embedded}.
 
 Although virtualization does bring benefits in terms of security, it has some drawbacks. The increased amount of code on which a guest operating system relies on in order to function equates to increased amount of potential vulnerabilities.
